@@ -19,7 +19,7 @@ return require('lazy').setup({
     },
     -- Extra themes
     -- { 'rose-pine/neovim', name = 'rose-pine',  lazy = true },
-    { 'catppuccin/nvim',           name = 'catppuccin', lazy = false },
+    { 'catppuccin/nvim',           name = 'catppuccin', lazy = false, run = function () vim.cmd.colorscheme('catppuccin') end },
     {
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate',
