@@ -4,7 +4,7 @@ return require('lazy').setup({
     { 'edgedb/edgedb-vim',         lazy = true },
     { 'mbbill/undotree',           lazy = false },
     { 'ggandor/leap.nvim',         lazy = false },
-    { 'petertriho/nvim-scrollbar', run = require('scrollbar').setup(), lazy = false },
+    { 'petertriho/nvim-scrollbar', run = function () require('scrollbar').setup() end, lazy = false },
     {
         'nvim-telescope/telescope.nvim',
         dependencies = { { 'nvim-lua/plenary.nvim' } },
