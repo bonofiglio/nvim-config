@@ -13,7 +13,7 @@ vim.keymap.set(
 )
 vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "[C]ode [A]ctions under cursor" })
 vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, { silent = true, desc = "[R]e[N]ame symbol under cursor" })
-vim.keymap.set("n", "<C-h>", vim.lsp.buf.signature_help, { silent = true, desc = "Show signature help" })
+vim.keymap.set("n", "<C-H>", vim.lsp.buf.signature_help, { silent = true, desc = "Show signature help" })
 vim.keymap.set("n", "<leader>va", vim.lsp.buf.format, { silent = true, desc = "Format current file" })
 
 -- Diagnostics
@@ -39,6 +39,12 @@ vim.keymap.set("n", "n", "nzzzv", { desc = "Next search result and center the sc
 vim.keymap.set("n", "N", "Nzzzv", { desc = "Previous search result and center the screen", silent = true })
 vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Scroll down and center the screen", silent = true })
 vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Scroll up and center the screen", silent = true })
+
+-- Window navigation
+vim.keymap.set("n", "<C-h>", ":wincmd h<CR>", { desc = "Go to the left window", silent = true })
+vim.keymap.set("n", "<C-j>", ":wincmd j<CR>", { desc = "Go to the down window", silent = true })
+vim.keymap.set("n", "<C-k>", ":wincmd k<CR>", { desc = "Go to the up window", silent = true })
+vim.keymap.set("n", "<C-l>", ":wincmd l<CR>", { desc = "Go to the right window", silent = true })
 
 -- Yanking shenanigans
 vim.keymap.set("x", "<leader>p", '"_dP', { desc = "Paste without overwriting register", silent = true })

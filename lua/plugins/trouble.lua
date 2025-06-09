@@ -1,5 +1,5 @@
 return {
-  'folke/trouble.nvim',
+  "folke/trouble.nvim",
   opts = {},
   keys = {
     {
@@ -26,16 +26,6 @@ return {
       "<leader>tl",
       "<cmd>Trouble toggle loclist<cr>",
       desc = "[T]rouble [L]ocal list",
-    },
-    {
-      "<c-j>",
-      "<cmd>Trouble next<cr>",
-      desc = "Trouble next",
-    },
-    {
-      "<c-k>",
-      "<cmd>Trouble prev<cr>",
-      desc = "Trouble previous",
     },
     {
       "<leader>cr",
