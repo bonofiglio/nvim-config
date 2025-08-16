@@ -4,6 +4,8 @@ return {
   priority = 1000,
   opts = {
     flavour = "mocha",
+    transparent_background = true,
+    auto_integrations = true,
   },
   init = function()
     vim.cmd.colorscheme("catppuccin")

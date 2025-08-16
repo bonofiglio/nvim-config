@@ -5,7 +5,10 @@ return {
     { "williamboman/mason.nvim", opts = {} },
     "williamboman/mason-lspconfig.nvim",
     "hrsh7th/cmp-nvim-lsp",
-    { "j-hui/fidget.nvim", opts = {} },
+    {
+      "j-hui/fidget.nvim",
+      opts = { notification = { window = { winblend = 0 } } },
+    },
   },
   config = function()
     --  This function gets run when an LSP attaches to a particular buffer.
