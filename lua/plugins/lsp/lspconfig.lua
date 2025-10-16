@@ -85,6 +85,7 @@ return {
     local servers = {
       nil_ls = require("plugins.lsp.servers.nil"),
       ts_ls = require("plugins.lsp.servers.ts"),
+      denols = require("plugins.lsp.servers.deno"),
       lua_ls = require("plugins.lsp.servers.lua"),
       zls = require("plugins.lsp.servers.zls"),
     }

@@ -14,4 +14,6 @@ return {
   filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
   -- Disable formatting from ts_ls
   capabilities = require("cmp_nvim_lsp").default_capabilities({ document_formatting = false }),
+  root_markers = { "package.json" },
+  single_file_support = false,
 }

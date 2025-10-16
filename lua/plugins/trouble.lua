@@ -29,8 +29,13 @@ return {
     },
     {
       "<leader>cr",
-      "<cmd>Trouble lsp toggle focus=false win.position=right<cr>",
+      "<cmd>Trouble lsp toggle focus=false win.position=right auto_refresh=false<cr>",
       desc = "[C]ode [R]eferences (Trouble)",
+    },
+    {
+      "<leader>ci",
+      "<cmd>Trouble lsp_incoming_calls toggle focus=false win.position=right auto_refresh=false<cr>",
+      desc = "[C]ode [I]ncoming calls (Trouble)",
     },
   },
 }

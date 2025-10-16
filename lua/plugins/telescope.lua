@@ -25,6 +25,8 @@ return { -- Fuzzy Finder (files, lsp, etc)
     },
   },
   config = function()
+    local open_with_trouble = require("trouble.sources.telescope").open
+
     -- [[ Configure Telescope ]]
     -- See `:help telescope` and `:help telescope.setup()`
     require("telescope").setup({
@@ -35,7 +37,13 @@ return { -- Fuzzy Finder (files, lsp, etc)
             ["<c-l>"] = "select_default",
             ["<c-j>"] = "move_selection_next",
             ["<c-k>"] = "move_selection_previous",
-            -- ['<c-t>'] = 'open_with_trouble',
+            ["<c-t>"] = open_with_trouble,
+          },
+          n = {
+            ["<c-l>"] = "select_default",
+            ["<c-j>"] = "move_selection_next",
+            ["<c-k>"] = "move_selection_previous",
+            ["<c-t>"] = open_with_trouble,
           },
         },
         vimgrep_arguments = {
